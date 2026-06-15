@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--viewport para responsividade-->
+    <link rel="icon" href="../images/favicon_03.ico">
+    <link rel="stylesheet" type="text/css" href="../style/style.css">
+    <title>Contato</title>
+</head>
+<body id="formulario">
+    <div class="container">
+
+        <div id="image-box-form" class="image-box">
+            <nav>
+                <ul>
+                    <li id="top-left"><a href="../index.html"><b>HOME</b></a></li>
+                </ul>
+                
+                <form action="../pages/action_page.php" method="post" autocomplete="on">
+                    <label for="nome">Nome</label>
+                    <input type="text" id="primeiroNome" name="nome" placeholder="Digite o nome aqui" required>
+                    
+                    <label for="email">E-mail</label>
+                    <input type="email" id="email" name="email" placeholder="Digite o e-mail aqui" required>
+                    
+                    <label for="opiniao">Gostaria de deixar uma mensagem?</label>
+                    <textarea cols="30" id="opiniao" rows="10" name="opiniao" maxlength="200" placeholder="Adoraríamos ouvir de você."></textarea> 
+                    
+                    <input type="submit" name="enviar" value="Enviar">
+                    <input type="reset" name="limpar" value="Limpar">
+                    
+                    <input type="checkbox" id="aceite" name="aceite" value="Sim">
+                    <label for="aceite">Aceito receber informações periódicas</label>
+                </form>
+
+                <ul>
+                    <li id="bottom-left"><a href="../pages/sobre.html" target="_blank"><b>SOBRE</b></a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="image-box">
+            <nav>
+                <p id="endereco">Endereço</p>
+                <ul>
+                    <li id="top-right"><a href="../pages/pagina_abc.html" target="_blank"><b>CONTEÚDO</b></a></li>
+                    </ul>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.9858242006894!2d-46.64937698492419!3d-23.533012266431317!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce586a0e489ea5%3A0x52e0a1f522a53a5a!2sETEC%20SEBRAE!5e0!3m2!1spt-BR!2sbr!4v1593453035096!5m2!1spt-BR!2sbr"></iframe>
+            </nav>
+        </div>
+
+    </div> </body>
+</html>
