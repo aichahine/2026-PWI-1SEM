@@ -75,7 +75,7 @@ body {
     display: flex;
     flex-wrap: wrap;
     width: 100%;
-    height: 100vh; /* 100% view height */
+    height: 100svh;
     background-size: cover; 
     background-position: center;
     background-repeat: no-repeat;
@@ -179,7 +179,7 @@ nav ul li a {
     width: 100%;
     padding: 40px 60px;
     box-sizing: border-box;
-    min-height: 100vh;
+    min-height: 100svh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -255,11 +255,15 @@ footer {
 
 #pagina-horizontal {
     background-color: #000000;
-    height: 100vh; /* 100% da view height */
+    height: 100svh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     position: relative;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    height: auto;
+    min-height: 100svh;
 }
 
 .container-pagina-horizontal {
@@ -275,7 +279,7 @@ footer {
 .video-01 {
     display: flex;
     flex-direction: column;
-    width: 288px;
+    width: min(288px, 85vw);
 }
 
 .video-01 video {
@@ -329,7 +333,7 @@ div p {
     flex-direction: column;
     bottom: 15px;
     right: 30px;
-    position: absolute;
+    position: relative;
 }
 
 .botoes .voltar {
@@ -353,9 +357,11 @@ img {
     background-color: #000000;
     display: flex;
     flex-direction: column;
-    min-height: 100vh;
+    min-height: 100svh;
     justify-content: center;
     position: relative;
+    padding-top: 60px;
+    padding-bottom: 100px;
 }
 
 .container-pagina-vertical {
@@ -368,6 +374,7 @@ img {
 
 .video-item {
     display: flex;
+    flex-wrap: wrap;
     align-items: flex-start;
     justify-content: center;
     width: 100%;
@@ -376,7 +383,7 @@ img {
 
 .video-item video {
     display: block;
-    width: 288px;
+    width: min(288px, 85vw);
     height: auto;
     aspect-ratio: 16/9;
 }
@@ -384,7 +391,7 @@ img {
 .video-texto {
     display: flex;
     flex-direction: column;
-    width: 288px;
+    width: min(288px, 85vw);
 }
 
 .video-texto h2 {
@@ -424,6 +431,7 @@ iframe {
     position: absolute;
     top: 105px;
     right: 30px;
+    max-width: calc(100% - 60px);
 }
 
 #endereco {
@@ -460,7 +468,7 @@ form input[type="reset"] {
 
 #pagina-cronologia {
     background-color: #000000;
-    min-height: 100vh;
+    min-height: 100svh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -477,8 +485,14 @@ form input[type="reset"] {
     gap: 30px;
 }
 
+.tabela-wrapper {
+    width: 100%;
+    overflow-x: auto;
+}
+
 .tabela-cronologia {
     width: 100%;
+    min-width: 480px;
     border-collapse: collapse;
     font-size: 15px;
     background-color: #0a0a0a;
@@ -511,7 +525,7 @@ form input[type="reset"] {
 
 #pagina-albuns {
     background-color: #000000;
-    min-height: 100vh;
+    min-height: 100svh;
     display: flex;
     flex-direction: column;
     justify-content: center;
